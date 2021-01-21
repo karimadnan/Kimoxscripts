@@ -107,13 +107,13 @@ export default function ScrollableTabsButtonForce() {
           aria-label="scrollable force tabs example"
         >
           <Tab
-            label="Xenobot"
-            icon={<img className={classes.Logo} src={Xeno} alt="Logo" />}
+            label="OTC-V8"
+            icon={<img className={classes.Logo} src={OTC} alt="Logo" />}
             {...a11yProps(0)}
           />
           <Tab
-            label="OTC-V8"
-            icon={<img className={classes.Logo} src={OTC} alt="Logo" />}
+            label="Xenobot"
+            icon={<img className={classes.Logo} src={Xeno} alt="Logo" />}
             {...a11yProps(1)}
           />
           <Tab
@@ -124,10 +124,10 @@ export default function ScrollableTabsButtonForce() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <InnerNav val={'xeno'} products={products} />
+        <InnerNav val={'otc'} products={products} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <InnerNav val={'otc'} products={products} />
+        <InnerNav val={'xeno'} products={products} />
       </TabPanel>
       {/* <TabPanel value={value} index={1}>
       </TabPanel> */}

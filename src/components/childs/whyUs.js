@@ -75,7 +75,7 @@ export default function WhyUs() {
       totalSlides={3}
       interval={100000}
       isPlaying={true}
-      totalSlides={5}
+      totalSlides={slides.length}
     >
       <ButtonBack>Back</ButtonBack>
       <ButtonNext>Next</ButtonNext>

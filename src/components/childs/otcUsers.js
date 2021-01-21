@@ -74,7 +74,8 @@ export default function Notfound(props) {
         setClicked(true)
       })
       .catch(function (error) {
-        console.log(error)
+        setErrorMsg(error.message)
+        setOpenError(true)
       });
   }
 
@@ -83,6 +84,7 @@ export default function Notfound(props) {
       .then(function (response) {
         setSuccessMsg(response.data.message)
         setOpenSuccess(true)
+        getOtcScripts();
       })
       .catch(function (error) {
         setErrorMsg(error.message)
