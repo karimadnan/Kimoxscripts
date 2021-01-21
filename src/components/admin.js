@@ -62,7 +62,7 @@ function a11yProps(index) {
 }
 
 export default function Admin(props) {
-  const url = 'http://192.168.1.2:4000/server/'
+  const url = 'http://kxscripts.herokuapp.com/server/'
   const classes = useStyles();
   const [auth, setAuth] = useState(false);
   const [error, setError] = useState('');
