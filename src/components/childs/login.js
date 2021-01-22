@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function Notfound(props) {
-  const url = 'http://www.kxscripts.herokuapp.com/server/'
+  const url = 'http://www.kimoxscripts.com/server/'
   const classes = useStyles();
   const [auth, setAuth] = useState(false);
   const [error, setError] = useState('');
