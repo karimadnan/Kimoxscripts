@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   scrollTab: {
     background: fade("#212121", 0.125),
     borderRight: '1px solid black',
+    borderRadius: '0.5rem',
     cursor: 'pointer',
     '&:hover': {
       backgroundColor: fade('#212121', 0.325),
