@@ -20,7 +20,11 @@ var bodyParser = require('body-parser');
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./server/Discord/commands').filter(file => file.endsWith('.js'));
 const cooldowns = new Discord.Collection();
+const sslRedirect = require('heroku-ssl-redirect');
+const compression = require('compression');
 
+app.use(compression());
+app.use(sslRedirect());
 app.use(cors())
 app.use(morgan("dev"));
 
