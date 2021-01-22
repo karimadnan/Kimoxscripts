@@ -72,7 +72,7 @@ export default function ScrollableTabsButtonForce() {
   const OTC = 'https://kimoxscripts.s3.eu-central-1.amazonaws.com/otc.png'
   const TFS = 'https://kimoxscripts.s3.eu-central-1.amazonaws.com/tfs.png'
   const classes = useStyles();
-  const url = 'http://www.kimoxscripts.com/server/'
+  const url = 'https://www.kimoxscripts.com/server/'
   const [value, setValue] = React.useState(0);
   const [products, setProducts] = React.useState([])
   const handleChange = (event, newValue) => {

@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Notfound(props) {
-  const url = 'http://www.kimoxscripts.com/server/'
+  const url = 'https://www.kimoxscripts.com/server/'
   const classes = useStyles();
   const [scripts, setScripts] = useState([])
   const [clicked, setClicked] = useState(false)
