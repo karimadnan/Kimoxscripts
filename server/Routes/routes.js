@@ -9,6 +9,7 @@ const GridFsStorage = require('multer-gridfs-storage');
 const storage = new GridFsStorage({
     url: url,
     file: (req, file) => {
+        console.log(file, "FILE")
         if (file.mimetype === 'application/octet-stream') {
             return {
                 bucketName: 'scripts',
