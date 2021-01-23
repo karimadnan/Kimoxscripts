@@ -29,7 +29,7 @@ router.get('/', function (req, res, next) {
 // FRONT APIS ------------------------------------------------
 router.get('/login', loginApis.login)
 router.get('/getProducts', prodcutsApi.getProducts)
-router.post('/uploadScript', Validator.checkJWT, Validator.isAdmin, loginApis.checkScript, upload.single('script'), loginApis.test)
+router.post('/uploadScript', Validator.checkJWT, Validator.isAdmin, loginApis.checkScript, upload.single('script'), console.log(upload, "UPLOAD"))
 router.post('/insertScript', Validator.checkJWT, Validator.isAdmin, loginApis.insertScript)
 router.get('/getOtcScripts', Validator.checkJWT, Validator.isAdmin, loginApis.getOtcScripts)
 router.get('/authenticateUser', loginApis.authOtcUser)
