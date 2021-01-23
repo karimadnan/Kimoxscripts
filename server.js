@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express()
 const normalizePort = (port) => parseInt(port, 10);
 const PORT = normalizePort(process.env.PORT || 4000);
-const http = require("https");
+const http = require("http");
 const server = http.createServer(app);
 const morgan = require("morgan");
 const path = require("path");
@@ -23,7 +23,7 @@ const cooldowns = new Discord.Collection();
 const redirectSSL = require('redirect-ssl')
 const compression = require('compression');
 
-app.use(redirectSSL)
+// app.use(redirectSSL)
 app.use(compression());
 app.use(cors())
 app.use(morgan("dev"));
