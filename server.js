@@ -23,7 +23,7 @@ const cooldowns = new Discord.Collection();
 const redirectSSL = require('redirect-ssl')
 const compression = require('compression');
 
-// app.use(redirectSSL)
+app.use(redirectSSL)
 app.use(compression());
 app.use(cors())
 app.use(morgan("dev"));
