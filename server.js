@@ -23,7 +23,7 @@ const cooldowns = new Discord.Collection();
 const redirectSSL = require('redirect-ssl')
 const compression = require('compression');
 
-app.use(redirectSSL)
+// app.use(redirectSSL)
 app.use(compression());
 app.use(cors())
 app.use(morgan("dev"));
@@ -107,8 +107,8 @@ client.on('message', message => {
 });
 
 DB.connect(url, dbname).then(success => {
-  console.log("Server Connected  ---!")
   server.listen(PORT);
+  console.log("Server online...")
   client.login(token);
 }, err => {
   console.log('Failed To connect DB', err);

@@ -61,8 +61,8 @@ function a11yProps(index) {
   };
 }
 
-export default function Admin(props) {
-  const url = 'https://www.kimoxscripts.com/server/'
+export default function Admin() {
+  const url = 'http://www.kimoxscripts.com/server/'
   const classes = useStyles();
   const [auth, setAuth] = useState(false);
   const [error, setError] = useState('');
