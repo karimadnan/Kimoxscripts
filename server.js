@@ -23,7 +23,7 @@ const cooldowns = new Discord.Collection();
 const redirectSSL = require('redirect-ssl')
 const compression = require('compression');
 
-app.use(redirectSSL)
+// app.use(redirectSSL)
 app.use(compression());
 app.use(cors())
 app.use(morgan("dev"));
@@ -50,7 +50,6 @@ for (const file of commandFiles) {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  // console.log(client.guilds.cache, "guilds")
 });
 
 client.on('message', message => {
