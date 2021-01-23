@@ -218,6 +218,9 @@ const loginAPI = {
             return res.status(500).send({ message: 'Script was not found in database.' });
         }
     },
+    test: function (req, res) {
+        res.status(200).send({ message: 'test' })
+    }
 }
 
 module.exports = loginAPI;
